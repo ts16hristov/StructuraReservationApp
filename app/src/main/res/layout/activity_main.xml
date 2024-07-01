@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        tools:ignore="ContentDescription"
+        />
+
+    <ImageButton
+        android:id="@+id/main_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/button_signin"
+        android:background="@null"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        tools:ignore="ContentDescription"
+        android:contentDescription="@string/log_in"/>
+
+    <TextView
+        android:id="@+id/signup_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/black"
+        android:text="@string/if_you_don_t_have_account"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat"
+        android:textSize="18sp"
+        tools:ignore="ContentDescription"
+        />
+
+    <ImageButton
+        android:id="@+id/signup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/button_signup"
+        android:background="@null"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        tools:ignore="ContentDescription"
+        android:contentDescription="@string/log_in"/>
+
+</LinearLayout>

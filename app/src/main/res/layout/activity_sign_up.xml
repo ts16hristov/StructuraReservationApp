@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="16dp">
+
+  <ImageButton
+      android:id="@+id/back_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/back_button"
+      android:background="@null"
+      android:layout_gravity="start"
+      tools:ignore="ContentDescription"
+      android:contentDescription="@string/back_button"/>
+
+  <TextView
+      android:id="@+id/title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/sign_up"
+      android:textColor="@android:color/white"
+      android:fontFamily="@font/montserrat"
+      android:textSize="24sp"
+      android:layout_gravity="center"
+      android:layout_marginBottom="24dp"
+      android:textStyle="bold" />
+
+  <EditText
+      android:id="@+id/signupEmail"
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:hint="@string/email"
+      android:textColorHint="@android:color/white"
+      android:textColor="@android:color/white"
+      android:layout_margin="5dp"
+      android:inputType="textEmailAddress"
+      tools:ignore="Autofill" />
+
+  <EditText
+      android:id="@+id/firstName"
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:hint="@string/fname"
+      android:textColorHint="@android:color/white"
+      android:textColor="@android:color/white"
+      android:layout_margin="5dp"
+      android:inputType="textEmailAddress"
+      tools:ignore="Autofill" />
+
+
+  <EditText
+      android:id="@+id/lastName"
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:hint="@string/lname"
+      android:textColorHint="@android:color/white"
+      android:textColor="@android:color/white"
+      android:layout_margin="5dp"
+      android:inputType="textEmailAddress"
+      tools:ignore="Autofill" />
+
+  <EditText
+      android:id="@+id/signupPassword"
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:hint="@string/password"
+      android:textColorHint="@android:color/white"
+      android:textColor="@android:color/white"
+      android:layout_margin="5dp"
+      android:layout_marginBottom="32dp"
+      android:inputType="textPassword"
+      tools:ignore="Autofill" />
+
+  <EditText
+      android:id="@+id/signupConfirmPassword"
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:hint="@string/confirm_password"
+      android:textColorHint="@android:color/white"
+      android:textColor="@android:color/white"
+      android:layout_margin="5dp"
+      android:inputType="textPassword"
+      tools:ignore="Autofill" />
+
+  <EditText
+      android:id="@+id/signupPhone"
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:hint="@string/phone_number"
+      android:textColorHint="@android:color/white"
+      android:textColor="@android:color/white"
+      android:layout_margin="10dp"
+      android:inputType="phone"
+      tools:ignore="Autofill,TextFields" />
+
+  <ImageButton
+      android:id="@+id/signup"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_margin="5dp"
+      android:background="@null"
+      android:contentDescription="@string/log_in"
+      android:src="@drawable/button_signup"
+      tools:ignore="ContentDescription" />
+
+  <TextView
+      android:id="@+id/signup_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:background="@color/black"
+      android:text="@string/if_you_have_account"
+      android:textColor="@color/white"
+      android:fontFamily="@font/montserrat"
+      android:textSize="18sp"
+      tools:ignore="ContentDescription"
+      />
+
+  <ImageButton
+      android:id="@+id/sign_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_margin="5dp"
+      android:background="@null"
+      android:contentDescription="@string/log_in"
+      android:src="@drawable/button_signin"
+      tools:ignore="ContentDescription" />
+
+
+</LinearLayout>
