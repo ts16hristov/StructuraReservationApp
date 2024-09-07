@@ -5,6 +5,8 @@ import android.content.SharedPreferences;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toolbar;
@@ -27,6 +29,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
     NavigationView navigationView;
 
+    ImageButton makeAnReservation;
 
     androidx.appcompat.widget.Toolbar toolbar;
 
@@ -42,6 +45,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         drawerLayout = findViewById(R.id.main);
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar);
+        makeAnReservation = findViewById(R.id.imageButton);
 
         setSupportActionBar(toolbar);
         navigationView.bringToFront();
@@ -59,6 +63,14 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         );
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+
+        makeAnReservation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, MakeReservationActivity.class);
+                startActivity(intent);
+            }
+        });
 
         navigationView.setNavigationItemSelectedListener(this);
 
